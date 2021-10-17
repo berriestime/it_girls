@@ -1,42 +1,124 @@
-div {
-    color: #002fff;
+header {
+    position: absolute;
+    width: 1440px;
+    height: 168px;
+    left: 0px;
+    right: 0px;
+    background: #161D27;
+    border-radius: 0px 0px 20px 20px;
+    color: #8191A2;
 }
 
-img {
-    width: 60vw;
-    border-radius: 25px;
+body {
+    font-family: "Sans Text", Verdana, Tahoma;
+    background: rgba(235, 236, 244, 1);
 }
 
-.menu {
-    text-decoration: none;
-    color: black;
-    padding: 4px;
-    font-weight: bolder;
+h1 {
+    font-family: "Sans Display", Verdana, Tahoma;
 }
 
-#like {
-    color: red;
+#alert {
+    width: 392px;
+    top: 273px;
+    left: 524px;
+    padding: 12px 24px 12px 24px;
+    background: rgba(134, 27, 227, 0.1);
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    padding: 12px;
 }
 
-#mainmenu .menu {
-    color: violet;
+#alert_text {
+    color: #861be3;
+    position: relative;
+    margin-left: 10px;
+}
+
+#alert_text:before {
+    content: "!";
+    position: absolute;
+    left: -10px;
 
 }
 
-#mainmenu .menu:hover {
-    text-decoration: underline;
+#account {
+    padding-left: 892px;
+    padding-right: 15px;
 }
 
-p::first-letter {
-    color: turquoise;
+form {
+    position: absolute;
+    color: #212121;
+    width: 384px;
+    height: 33px;
+    left: 524px;
+    top: 208px;
+}
+
+#header_padding {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+#divider {
+    width: 100%;
+    padding-bottom: 24px;
+    padding-top: 13px;
+}
+
+#steps {
+    display: flex;
+    padding-bottom: 8px;
+}
+
+.step {
+    flex: 1 0 auto;
+}
+
+.progress {
+    height: 10px;
+    background: rgba(81, 96, 113, 1);
+    border-radius: 1rem;
+}
+
+.progress_active {
+    background: rgba(255, 197, 64, 1);
 }
 
 #logo {
-    width: 100px;
-    padding: 0px;
-    margin: 0px;
+    padding-right: 15px;
 }
 
-#companyname {
-    font-family: 'Press Start 2P', cursive;
+.form-part {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.part-left {
+    flex: 0 0 100px;
+    text-align: right;
+}
+
+.part-right {
+    flex: 4 0 auto;
+}
+
+.button-simple {
+    background: #44EB99;
+    border-radius: 10px;
+    width: 190px;
+    padding: 10px;
+    text-align: center;
+    border: 0;
+}
+
+.button-simple:hover {
+    background: #33da88;
+}
+
+.button-simple:active {
+    background: #22c977;
 }

@@ -1,32 +1,102 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ฅ^•ﻌ•^ฅ</title>
-    <link rel="shortcut icon" href="assets/images/cat.png">
+    <title>Школа 21</title>
+    <link rel="shortcut icon" href="assets/images/favicon.svg">
     <link rel="stylesheet" href="/week4/assets/styles/style.css">
+    <link rel="stylesheet" href="/week4/assets/styles/normolize.css">
+    <style>
+        @font-face {
+            font-family: "Sans Display";
+            src: url(/week4/assets/fonts/SBSansDisplay-Regular.woff2);
+        }
+    </style>
+    <style>
+        @font-face {
+            font-family: "Sans Text";
+            src: url(/week4/assets/fonts/SBSansText-Regular.woff2);
+        }
+    </style>
 </head>
+
 <body>
-        <h1 style="background-color: hsl(0, 0%, 0%); color: #c300ff">Здравствуйте <span style="color: #a11d96
-        ;"><strong>Мистер Кот</strong></span>! ^__^</h1>
-        <p style="background-color: #fd6cf157;">Надеюсь ты сытый. Если нет, то иди поешь, а то по жопе получишь! :3 <br>Кстати, ты не знаешь почему нет кошачьего корма со вкусом <span style="color: rgb(255, 0, 0);"> <em> мыши</em> </span>? Кажется это несправедливость какая-то.</p>
-        <img src="/week4/assets/styles/images/cat.jpeg" alt="cat">
-        <p style="background-color: #64125d50;">Отчитываюсь по домашнему заданию. Установила все необходимые программы и браузеры. Смотри *_*</p>
-        <img src="/week4/assets/styles/images/slack_vscode_brovsers_github_figma.png" alt="skreenshot">
-        <p style="background-color: #fd6cf157;">Прикрепляю свою почту на сервисах github и trello - berries.whale@gmail.com</p>
-        <div style="background-color: rgba(137, 43, 226, 0.301);">Использую <span style="color: rgba(233, 55, 224, 0.507);">hotkey</span>:<br>
-            <ul>
-            <li><i>command + '/'</i></li>
-            <li><i>option + Z</i></li>
-            <li><i>command + shift + P</i></li>
-            </ul>
+    <header>
+        <div id="header_padding">
+            <div id="first">
+                <img id="logo" src="/week4/assets/images/Group.svg" alt="logo">
+                <span>Отбор в Школу 21</span>
+                <img id="account" src="/week4/assets/images/account_circle_24px.svg" alt="account_circle_24px">
+                <span>Рус</span>
+                <span>Eng</span>
+            </div>
+            <div>
+                <img id="divider" src="assets/images/divider.png" alt="divider">
+            </div>
+            <div id="steps">
+                <div class="step">
+                    <span>1 этап из 3 (предварительный отбор)</span>
+                    <div class="progress"></div>
+                </div>
+                <div class="step">
+                    <span>2 этап из 3 (бассейн)</span>
+                    <div class="progress progress_active"></div>
+                </div>
+                <div class="step">
+                    <span>3 этап из 3 (основное обучение)</span>
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div>
+                <span>Соглашение</span>
+                <span>Профиль</span>
+                <span>Тестирование</span>
+                <span>Интервью</span>
+            </div>
         </div>
-        <div style="background-color: rgba(220, 20, 60, 0.432);">Ссылка на мой <a style="color: rgba(139, 0, 0, 0.459);" href="https://github.com/berriestime">github</a></div>
-        <div style="background-color: rgb(255, 0, 51);">
-            Позволь представить тебе моих котов. Знакомься, это ДжоДжо и Лелуш.💜💜💜 <br/>
-            <img src="/week4/assets/styles/images/JoJo&Lelush.jpeg" alt="JoJo&Lelush">
+    </header>
+    <form>
+        <h1>Расскажи нам немного о себе</h1>
+        <div id="alert">
+            <span id="alert_text">Твои имя и фамилия должны соответствовать паспортным данным.</span>
         </div>
+        <div class="form-part">
+            <label class="part-left" for="campus">Кампус</label>
+            <select class="part-right" id="campus" name="Кампус">
+                <option value="value1">Москва</option>
+                <option value="value2">Казань</option>
+            </select>
+        </div>
+        <div class="form-part">
+            <label class="part-left" for="second_name">Фамилия</label>
+            <input class="part-right" id="second_name" type="text">
+        </div>
+        <div class="form-part">
+            <label class="part-left" for="first_name">Имя</label>
+            <input class="part-right" id="first_name" type="text">
+        </div>
+        <div class="form-part">
+            <label class="part-left" for="middle_name">Отчество</label>
+            <input class="part-right" id="middle_name" type="text">
+        </div>
+        <div class="form-part">
+            <label class="part-left">Пол</label>
+            <div class="part-right">
+                <label for="m"><input name="sex" id="m" type="radio">Мужской</label>
+                <label for="f"><input name="sex" id="f" type="radio">Женский</label>
+            </div>
+        </div>
+        <div>
+            <button class="button-simple">Далее</button>
+        </div>
+    </form>
+    <footer>
+        <span>Copyright © 21 2020. Все права защищены.</span>
+        <a href="https://www.google.ru/">Проблемы?</a>
+    </footer>
 </body>
+
 </html>
