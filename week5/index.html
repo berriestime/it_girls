@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/normolize.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
     <title>Document</title>
 </head>
-<body>
-    <h1>Здесь будут таблицы</h1>
-    <table border="1" style="width: 50%;">
-        <thead>
-            <th>Имя</th>
-            <th>Информация</th>
-            <th>Информация</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td colspan="2">2+3</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>5</td>
-                <td rowspan=2>6+9</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>8</td>
-            </tr>
-        </tbody>
-    </table>
+
+<body class="flexbox">
+    <header class="header-container">
+        [Шапка страницы]
+    </header>
+    <div class="main-aside-container">
+        <main class="main-container">
+            <div class="main-container-main">[Основная часть]</div>
+            <div class="main-conteiner-down-1">
+                <div class="additional-block first-line">[Ещё 1]</div>
+                <div class="additional-block first-line">[Ещё 2]</div>
+            </div>
+            <div class="main-conteiner-down-2 additional-block">[Ещё 3]</div>
+        </main>
+        <aside class="aside-container">
+            [Боковая часть]
+        </aside>
+    </div>
+    <footer class="footer-container">
+        <div class="footer-sections">[Секция футера 1]</div>
+        <div class="footer-sections">[Секция футера 2]</div>
+        <div class="footer-sections">[Секция футера 3]</div>
+        <div class="footer-sections">[Секция футера 4]</div>
+    </footer>
 </body>
+
 </html>
