@@ -1,0 +1,15 @@
+.my-card{
+    width: 25vw;
+    margin: 20px;
+    background-color: #F4A261;
+    border: 1px #E76F51 solid;
+}
+
+.selected{
+    background-color: #2A9D8F;
+    border: 1px #264653 solid;
+}
+
+.pictures{
+    width: 40vw;
+}

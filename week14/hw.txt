@@ -1,0 +1,95 @@
+1. - function declaration
+    - function expression
+    - arrow function
+2. function declaration
+    ```
+    function sayMeow(meow){
+        if (meow){
+            alert("Prrrr :3");
+            return;
+        }
+        alert("Feed me!")
+    }
+    ```
+
+    function expression
+    ```
+    let sayMeow = function(meow){
+        if (meow){
+            alert("Prrrr :3");
+            return;
+        }
+        alert("Feed me!")
+    }
+    ```
+
+    arrow function
+    ```
+    let sayMeow = meow => {
+        if (meow){
+            alert("Prrrr :3");
+            return;
+        }
+        alert("Feed me!")
+    }
+3. Тестирование - это поиск сценариев, при которых программа может работать не корректно, 
+а отладка, это когда текущий код уже работает некорректно и идет поиск и исправление ошибки.
+Логгирование - это срез результатов работы программы в определенные моменты жизненного цикла,
+помогает при отладке и для сбора различной информации.
+4. function expression можно вызвать только после того как эта функция загрузится, 
+а function declaration инициализируется еще до момента исполнения кода в файле, 
+поэтому функцию, объявленную при помощи function declaration можно вызвать из любого места в файле.
+5. Функция console.log() выводит переданные в нее данные в консоль разработчика.
+6. BOM это "дерево объектов" браузера, специальные объекты, которые работают со всем, кроме документа.
+Через BOM идет взаимодействие с браузером, ОС.
+DOM - document object model, объектная модель документа, с которой можно работать.
+7. 
+```
+<!DOCTYPE HTML>
+<html>
+
+<body>
+	<form name="search">
+		<label>Поиск:
+			<input type="text" name="search"> </label>
+		<input type="submit" value="Search!"> </form>
+	<hr>
+	<form name="search-person">Поиск по посетителям:
+		<table id="age-table">
+			<tr>
+				<td>Возраст:</td>
+				<td id="age-list">
+					<label>
+						<input type="radio" name="age" value="young">до 18</label>
+					<label>
+						<input type="radio" name="age" value="mature">18-50</label>
+					<label>
+						<input type="radio" name="age" value="senior">старше 50</label>
+				</td>
+			</tr>
+			<tr>
+				<td>Дополнительно:</td>
+				<td>
+					<input type="text" name="info">
+					<input type="text" name="info">
+					<input type="text" name="info"> </td>
+			</tr>
+		</table>
+		<input type="button" value="Search!"> </form>
+</body>
+
+</html>
+```
+    1) let table = document.querySelector('#age-table');
+        console.log(table);
+    2) let labels = table.querySelectorAll('label');
+        console.log(labels);
+    3) let form = document.getElementsByName('search-person');
+        console.log(form);
+8. Добавить в тэг к атрибутам событие JS onclick. Например: onClick="location.href='https://google.com'"
+9. Найти элемент input на странице, например при помощи getElementsByTagName и присвоить нужному элементу пустое значение.
+Например: document.getElementsByTagName('input')[0].value = 5; 
+10. let showGreating = () => {
+    let name = prompt("Как тебя зовут?", ['']);
+    alert(`Привет, ${name}!`);
+}
