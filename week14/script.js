@@ -1,41 +1,32 @@
-function sum(){
-    let dataA = document.getElementsByTagName('input')[0];
-    let a = dataA.value;
-    let dataB = document.getElementsByTagName('input')[1];
-    let b = dataB.value;
-    let res = +a + +b;
-    let dataRes = document.getElementsByTagName('input')[2];
-    dataRes.value = res;
+const dataA = document.getElementsByTagName('input')[0];
+const dataB = document.getElementsByTagName('input')[1];
+const dataRes = document.getElementsByTagName('input')[2];
 
+function sum(){
+    const a = dataA.value;
+    const b = dataB.value;
+    const res = +a + +b
+    dataRes.value = res;
 }
 
 function sub(){
-    let dataA = document.getElementsByTagName('input')[0];
-    let a = dataA.value;
-    let dataB = document.getElementsByTagName('input')[1];
-    let b = dataB.value;
-    let res = +a - +b; 
-    let dataRes = document.getElementsByTagName('input')[2];
+    const a = dataA.value;
+    const b = dataB.value;
+    const res = +a - +b;
     dataRes.value = res;
 }
 
 function mult(){
-    let dataA = document.getElementsByTagName('input')[0];
-    let a = dataA.value;
-    let dataB = document.getElementsByTagName('input')[1];
-    let b = dataB.value;
-    let res = +a * +b; 
-    let dataRes = document.getElementsByTagName('input')[2];
+    const a = dataA.value;
+    const b = dataB.value;
+    const res = +a * +b;
     dataRes.value = res;
 }
 
 function div(){
-    let dataA = document.getElementsByTagName('input')[0];
-    let a = dataA.value;
-    let dataB = document.getElementsByTagName('input')[1];
-    let b = dataB.value;
-    let res = +a / +b; 
-    let dataRes = document.getElementsByTagName('input')[2];
+    const a = dataA.value;
+    const b = dataB.value;
+    const res = +a / +b;
     dataRes.value = res;
 }
 
@@ -43,7 +34,7 @@ function select(sender){
     sender.classList.add("selected");
 }
 
-let data = ["./assets/img/first.png", "./assets/img/second.jpeg", "./assets/img/third.jpeg"];
+const data = ["./assets/img/first.png", "./assets/img/second.jpeg", "./assets/img/third.jpeg"];
 let i = 0;
 
 function next(){
