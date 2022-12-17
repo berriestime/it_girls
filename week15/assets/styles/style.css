@@ -1,0 +1,49 @@
+.button{
+    background-color: #FAC000;
+    border: #FAC000;
+}
+
+.wrapper{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 20px;
+    box-shadow: 10px 10px 20px 10px rgb(230, 228, 228);
+}
+
+.input-wrapper{
+    position: relative;
+}
+
+/* .input-wrapper:focus-within .placeholder { */
+.input-wrapper .placeholder {
+    top: -15px;
+    font-size: small;
+}
+
+.placeholder{
+    position: absolute;
+    top: 0;
+    transition: 0.15s ease-in-out;
+}
+
+#name-registration{
+    
+}
+
+#errorMessage{
+    color: red;
+}
+
+#errorMessageFirstName{
+    color: red;
+}
+
+#errorMessageSecondName{
+    color: red;
+}
+
+.title{
+    text-align: center;
+}
