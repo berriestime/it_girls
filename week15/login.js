@@ -10,26 +10,30 @@ function checkForm(){
     errorCounter += checkTwoPasswords();
 
     if (errorCounter == 0){
-        alert(`Добро пожаловать, ${document.getElementById('firstName').value}`);
+        const name = document.getElementById('firstName');
+        alert(`Добро пожаловать, ${name.value}`);
     }
 }
 
 function checkNotEmpty(id, idError, messageError){
-    let firstName = document.getElementById(id);
-    document.getElementById(idError).innerHTML = '';
+    const error = document.getElementById(idError);
+    const firstName = document.getElementById(id);
+
+    error.innerHTML = '';
     if(firstName.value == ''){
-        document.getElementById(idError).innerHTML+=messageError;
+        error.innerHTML+=messageError;
         return 1;
     }
     return 0;
 }
 
 function checkTwoPasswords(){
-    let firstPassword = document.getElementById('passwordFirst');
-    let secondPassword = document.getElementById('passwordSecond');
-    document.getElementById('errorPasswordFirst').innerHTML = '';
+    const firstPassword = document.getElementById('passwordFirst');
+    const secondPassword = document.getElementById('passwordSecond');
+    const error = document.getElementById('errorPasswordFirst');
+    error.innerHTML = '';
     if(firstPassword.value != secondPassword.value){
-        document.getElementById('errorPasswordFirst').innerHTML+="Пароли не совпадают";
+        error.innerHTML+="Пароли не совпадают";
         return 1;
     }
     return 0;
