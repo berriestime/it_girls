@@ -27,51 +27,51 @@
     <h2>Регистрация</h2>
     <form id="registration" class="wrapper">
       <p class="title">Регистрация</p>
+
+
       <div class="input-wrapper">
-        <label class="placeholder" for="placeholder">Имя</label>
-        <input id="placeholder" type="text">
+        <label class="placeholder" for="firstName">Имя</label>
+        <input id="firstName" type="text"><br>
+        <div class="errorMessage" id="errorMessageFirstName"></div>
       </div>
-      <label for="">Имя</label>
-      <input
-        type="text"
-        name="firstName"
-        placeholder="Имя"
-        id="firstName"
-      /><br />
-      <div id="errorMessageFirstName"></div>
-      <label for="">Фамилия</label>
-      <input
-        id="secondName"
-        type="text"
-        name="secondName"
-        placeholder="Фамилия"
-      /><br />
-      <div id="errorMessageSecondName"></div>
-      <label for="">Придумайте логин</label>
-      <input type="text" name="login" placeholder="Логин" /><br />
-      <label for="">Придумайте пароль</label>
-      <input
-        type="password"
-        name="pass"
-        placeholder="Придумайте пароль"
-      /><br />
-      <label for="">Повторите пароль</label>
-      <input
-        type="password"
-        name="repass"
-        placeholder="Повторите пароль"
-      /><br />
-      <label for="">Номер мобильного телефона</label>
-      <input
-        type="number"
-        name="phone"
-        placeholder="Номер мобильного телефона"
-      /><br />
-      <div id="errorMessage"></div>
-      <button onclick="check();" class="button" type="button">
+      <div class="input-wrapper">
+        <label class="placeholder" for="secondName">Фамилия</label>
+        <input id="secondName" type="text"><br>
+        <div class="errorMessage" id="errorMessageSecondName"></div>
+      </div>
+      <div class="input-wrapper">
+        <label class="placeholder" for="login">Придумайте логин</label>
+        <input id="login" type="text"><br>
+        <div class="errorMessage" id="errorLogin"></div>
+      </div>
+      <div class="input-wrapper">
+        <label class="placeholder" for="passwordFirst">Придумайте пароль</label>
+        <input id="passwordFirst" type="text"><br>
+        <div class="errorMessage" id="errorPasswordFirst"></div>
+      </div>
+      <div class="input-wrapper">
+        <label class="placeholder" for="passwordSecond">Повторите пароль</label>
+        <input id="passwordSecond" type="text"><br>
+        <div class="errorMessage" id="errorPasswordSecond"></div>
+      </div>
+      <div class="input-wrapper">
+        <label class="placeholder" for="phoneNumber">Номер мобильного телефона</label>
+        <input id="phoneNumber" type="text"><br>
+        <div class="errorMessage" id="errorPhoneNumber"></div>
+      </div>
+      <button onclick="checkForm();" class="button" type="button">
         Зарегистрироваться
       </button>
     </form>
+    <h3>Выбор темы из выпадающего списка</h3>
+    <div>
+      <label for="theme">Выберете тему:</label>
+      <select name="" id="theme">
+        <option value="1" id="light">Светлая</option>
+        <option value="2" id="dark">Темная</option>
+        <option value="3" id="blue">Синяя</option>
+      </select>
+    </div>
   </body>
   <script src="./calc.js"></script>
   <script src="./login.js"></script>
