@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/normolize.css" />
+    <link rel="stylesheet" href="./assets/styles/style_car.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="brand-car-select">Выберете марку автомобиля</label>
+    <select name="brand-car" id="brand-car-select">
+      <option value="" disabled selected>--Марка--</option>
+      <optgroup label="Популярные марки авто">
+        <option id="audi">Audi</option>
+        <option id="BMW">BMW</option>
+        <option id="Ford">Ford</option>
+        <option id="Kia">Kia</option>
+        <option id="Mercedes-Benz">Mercedes-Benz</option>
+      </optgroup>
+      <optgroup label="Популярные марки авто">
+        <option id="Lexus">Lexus</option>
+        <option id="Toyota">Toyota</option>
+        <option id="Nissan">Nissan</option>
+      </optgroup></select
+    ><br />
+    <label for="model-car-select">Выберете марку автомобиля</label>
+    <select name="models-car" id="model-car-select" disabled>
+      <option class="BMW-model d-none" id="Model" disabled selected>
+        --Модель--
+      </option>
+      <option class="BMW-model d-none" id="X6" value="5990000">X6</option>
+      <option class="BMW-model d-none" id="X7 кроссовер" value="8630000">
+        X7 кроссовер
+      </option>
+      <option class="audi-model d-none" id="E-tron GT" value="7251200">
+        E-tron GT
+      </option>
+      <option class="audi-model d-none" id="Q7" value="4092200">Q7</option>
+      <option class="ford-model d-none" id="Mustang" value="1898800">
+        Mustang
+      </option>
+      <option class="ford-model d-none" id="Escape" value="1900900">
+        Escape
+      </option>
+      <option class="kia-model d-none" id="Sportage" value="1790000">
+        Sportage
+      </option>
+      <option class="kia-model d-none" id="Stinger" value="2500000">
+        Stinger
+      </option>
+      <option class="merce-model d-none" id="E-class Sedan" value="3700000">
+        E-class Sedan
+      </option>
+      <option
+        class="merce-model d-none"
+        id="Mercedes-Maybach S-class"
+        value="12800000"
+      >
+        Mercedes-Maybach S-class
+      </option></select
+    ><br />
+    <label for="year-of-issue">Год выпуска</label>
+    <select name="year-of-issue" id="year-of-issue" disabled>
+      <option value="year-of-issue" disabled selected>--Год выпуска--</option>
+      <option class="year" value="0" id="year-2008">2008</option>
+      <option class="year" value="200" id="year-2016">2016</option>
+      <option class="year" value="500" id="year-2022">2022</option></select
+    ><br />
+    <label for="generation">Поколение</label>
+    <select name="generation" id="generation" disabled>
+      <option class="generation" value="generation" disabled selected>
+        --Поколение--
+      </option>
+      <option class="generation" value="100">Рестайлинг 1</option>
+      <option class="generation" value="200">Рестайлинг 2</option></select
+    ><br />
+    <label for="modification">Модификация</label>
+    <select name="modification" id="modification" disabled>
+      <option class="modification" value="modification" disabled selected>
+        --Модификация--
+      </option>
+      <option class="modification" value="1.7МТ/140/Бензин/Передний">
+        1.7МТ/140/Бензин/Передний
+      </option>
+      <option class="modification" value="2МТ/140/Бензин/Передний">
+        2МТ/140/Бензин/Передний
+      </option></select
+    ><br />
+    <label for="body-type">Тип кузова</label>
+    <select name="body-type" id="body-type" disabled>
+      <option value="body-type" disabled selected>--Тип кузова--</option>
+      <option class="body-type" value="100">Купе</option>
+      <option class="body-type" value="200">Седан</option>
+      <option class="body-type" value="300">Универсал</option>
+      <option class="body-type" value="500">Кроссовер</option></select
+    ><br />
+    <label for="equipment-level">Уровень оснащения</label>
+    <select name="equipment-level" id="equipment-level" disabled>
+      <option class="equipment-level" value="equipment-level" disabled selected>
+        --Уровень оснащения--
+      </option>
+      <option class="equipment-level" value="1">Базовый</option>
+      <option class="equipment-level" value="1.5">Средний</option>
+      <option class="equipment-level" value="2">Максимальный</option></select
+    ><br />
+    <input id="mileage" type="text" placeholder="Пробег, км" />
+    <button id="btn">Оценить</button>
+    <label for="cost">Ориентировочная цена:</label>
+    <input id="cost" type="text" />
+  </body>
+  <script src="./assets/scripts/cars.js"></script>
+</html>

@@ -1,0 +1,61 @@
+1. Массивы можно объявить двумя способами:
+    - через квадратные скобки. let array = [];
+    - new Array(). new Array("fisrt, second");
+2. Список товаров в магазине - это массив.
+    Данные пользователя при регистрации - это массив.
+    Линейка моделей автомобилей - это массив.
+3. Можно удалить по индексу элемента, но тогда нужно 
+    будет сместить элементы, чтобы он был не разреженым.
+4. В цикле for можно пропускать части for(;;) - тогда будет
+    бесконечный цикл.
+5. 
+```
+    let counter = 0;
+    while(counter < 10){
+        console.log(`${counter}`);
+        counter++;
+    }
+```
+```
+    while(true){
+        if ((Math.floor(Math.random() * 10) == 7)){
+            alert("7.stop");
+            break;
+        }
+    }
+```
+6. new Array(5) создаст новый массив из 5 пустых элементов, 
+    значение которых будет undefined
+7. 
+```
+    function even(startNumber, endNumber){
+      for(startNumber; startNumber <= endNumber; startNumber++){
+        if (startNumber % 2 != 0)
+          continue;
+        console.log(startNumber);
+      }
+    }
+    
+    even(2, 10);
+```
+8. Код arr[2](); выведет все элементы массива. Потому что в 
+    элемент с индексом 2 мы положили функцию alert( arr ).
+***input***
+    a, b, function(){alert( arr );}
+
+Объяснение:
+    [0] - a
+    [1] - b
+    [2] - function(){alert( arr );}
+9. Цикл for(;;)
+    Цикл for(item of items)
+    Метод forEach. Привет: arr.forEach(function(){alert()})
+10. Можно добавить класс для инпутов формы регистрации и найти 
+    их следующим образом 
+    ```
+    document.querySelectorAll(".reg-input");
+    ```
+11. Использовать метод sort.
+    arr.sort([compareFunction])
+12. Принудительно прервать бесконечный цикл можно закрыв
+    вкладку из диспетчера задач(Shift+Esc).
