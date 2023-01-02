@@ -1,0 +1,28 @@
+1.  "",'', ``. В последние можно передавать аргументы при помощи ${myVar} и создавать многоуровневую строку с переносом на новую строку.
+2.  Найти подстроку можно следующими методами: indexOf(), lastIndexOf(), search().
+    Пример:
+    const fullName = "Koroleva Elena Mickhailovna";
+    const name = fullName.search("Elena");
+3.  '\n' - это перевод на новую строку.
+4.  const name = "lena";
+    const newName = name.charAt(0).toUpperCase() + name.slice(1);
+5.  const date = new Date("2021-12-24T22:51:00");
+6.  const now = new Date();
+    const tomorrow = new Date(
+        now.getFullYear(),
+        now.getMonth(),
+        now.getDate() + 1
+      );
+    let diff = tomorrow - now; // в миллисекундах
+    diff = diff / 1000; // в секундах
+    diff = diff / 60; // в минутах
+    diff = diff / 60; // в часах
+7.  let myStr = "120$€₽";
+    myStr = myStr.match(/\d+/);
+    console.log(myStr[0]);
+8.  join нужна для соединения элементов в строку;
+    split - для деления строки на элементы по указанному символу
+9.  Math.round(x);
+10. let random = Math.floor(Math.random() * 100);
+11. Функция trim нужна для удаления пробельных символов в начале и конце строки.
+12. Флаг - это значение или переменная для индикации состояния программы или каких-то значений.
