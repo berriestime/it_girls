@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function today(date) {
+        let day = [];
+        if (date.getDate() < 10) {
+          day = "0";
+          day += date.getDate();
+        } else {
+          day += date.getDate();
+        }
+        let month = [];
+        if (date.getMonth() + 1 < 10) {
+          month = "0";
+          month += date.getMonth() + 1;
+        } else {
+          month += date.getMonth() + 1;
+        }
+        let hours = [];
+        if (date.getHours() < 10) {
+          hours = "0";
+          hours += date.getHours();
+        } else {
+          hours += date.getHours();
+        }
+        let minutes = [];
+        if (date.getMinutes() < 10) {
+          minutes = "0";
+          minutes += date.getMinutes();
+        } else {
+          minutes += date.getMinutes();
+        }
+        console.log(
+          `${day}.${month}.${date.getFullYear()}, ${hours}:${minutes}`
+        );
+      }
+      function formatDate(past) {
+        let currentDate = new Date("2023-01-06T22:00:00");
+        // Прошло меньше 1 секунды (1 сек = 1000млсек)
+        if (currentDate.getTime() - past.getTime() < 1000) {
+          console.log("прямо сейчас");
+          // Прошло меньше 1 минуты (1 мин = 60 * 1000 млсек)
+        } else if (currentDate.getTime() - past.getTime() < 60000) {
+          const secunds = (currentDate.getTime() - past.getTime()) / 1000;
+          console.log(`${secunds} сек. назад`);
+          // Прошло меньше 1 часа (1 час = 60 * 60 * 1000 млсек)
+        } else if (currentDate.getTime() - past.getTime() < 3600000) {
+          const minutes = (currentDate.getTime() - past.getTime()) / 1000 / 60;
+          console.log(`${minutes} мин. назад`);
+        } else {
+          today(past);
+        }
+      }
+      past = new Date("2023-01-06T21:00:00");
+      formatDate(past);
+    </script>
+  </body>
+</html>
