@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./assets/styles/catsOwners.css"> -->
+</head>
+    <h1>Расскажте о своем котике:</h1>
+    <form action="" method="">
+    <div>
+        <label for="name">Кличка питомца</label>
+        <input type="text" id="name" placeholder="Кличка" required>
+    </div><br/>
+    <div>
+        <label for="fio">Имя владельца</label>
+        <input type="text" id="fio" placeholder="Имя" required>
+    </div><br/>
+    <div>
+        <label for="phone">Контакты владельца</label>
+        <input type="text" id="phone" name="phone" placeholder="+7 (123) 456-78-91" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="10" maxlength="20" required/>
+    </div><br/>
+    <div id="food">Чем питается:<br/>
+        Сухой корм<input type="checkbox" id="dryFood" name="checkbox" value="Сухой корм"/> <br/>
+        Влажный корм<input type="checkbox" id="wetFood" name="checkbox" value="Влажный корм"/> <br/>
+        Натуральный корм<input type="checkbox" id="naturalFood" name="checkbox" value="Натуральный корм"/>
+    </div><br/>
+    <div>
+        Порода:<br/>
+        <select id="breed">
+            <option id="ori">Ориентальная</option>
+            <option id="asyss">Абиссинская</option>
+            <option id="shat">Шотландская вислоухая</option>
+            <option id="russian">Русская голубая</option>
+            <option id="siamse">Сиамская</option>
+            <option id="sphin">Сфинкс</option>
+            <option id="threes">Лесная</option>
+        </select>
+        </div><br/>
+    <div id="sex">
+        Пол:<br/>
+        Самец<input type="radio" name="sex"/> <br/>
+        Самка<input type="radio" name="sex"/>
+    </div><br/>
+    <div>
+        <label for="comments">Комментарий владельца:<br/></label>
+        <textarea id="comments" rows="10" required></textarea>
+    </div><br/>
+    <div>
+        <label for="photo">Фото питомца:</label>
+        <input type="file" id="photo" required>
+    </div><br/>
+    <div>
+        <button onclick="createCat()">Сохранить</button>
+    </div>
+</form>
+</body>
+<script>
+    class Cat {
+        constructor(catName, fio, phone, food, breed, sex, comment, photo){
+            this.catName = catName;
+            this.fio = fio;
+            this.phone = phone;
+            this.food = food;
+            this.breed = breed;
+            this.sex = sex;
+            this.comment = comment;
+            this.photo = photo;
+        }
+    }
+    function createCat(){
+        const catName = document.getElementById("name").value;
+        const fio = document.getElementById("fio").value;
+        const phone = document.getElementById("phone").value;
+        const dryFood = document.getElementById("dryFood").value;
+        const wetFood = document.getElementById("wetFood").value;
+        const naturalFood = document.getElementById("naturalFood").value;
+        const breed = document.getElementById("breed").value;
+        const sex = document.getElementById("sex").value;
+        const photo = document.getElementById("photo").value;
+        const comments = document.getElementById("comments").value;
+
+        const cat = new Cat(catName, fio, phone, "dry", breed, "sex", comments, photo);
+        console.log(cat);
+    }
+</script>
+</html>

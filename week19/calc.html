@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="a">Введите число а:</label>
+    <input type="number" id="a" />
+    <label for="b">Введите число b:</label>
+    <input type="number" id="b" /><br />
+    <label for="calc">Доступные операции:</label>
+    <div id="calc">
+      <button onclick="Calculator.sum()">+</button>
+      <button onclick="Calculator.sub()">-</button>
+      <button onclick="Calculator.div()">/</button>
+      <button onclick="Calculator.mult()">*</button>
+    </div>
+    <label for="res">Результат:</label>
+    <input type="text" id="res" />
+  </body>
+  <script src="./assets/scripts/calc.js"></script>
+</html>
