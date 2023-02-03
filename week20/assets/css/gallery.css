@@ -29,6 +29,10 @@
     height: 3vh;
 }
 
+.stars:hover{
+    background: rgb(255, 174, 0);
+}
+
 .starChecked{
     background: gold;
 }
