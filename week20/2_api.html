@@ -41,6 +41,7 @@
         .catch((err) => console.log(err));
     }
     function render(data) {
+      container.innerHTML = "";
       container.innerHTML += `<img class="picture" src="${data.sprites.front_default}">`;
       container.innerHTML += `<div>name: ${data.species.name}</div>`;
       container.innerHTML += `<div>weight: ${data.weight}</div>`;
