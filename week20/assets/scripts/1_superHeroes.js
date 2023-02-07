@@ -165,30 +165,15 @@ function render() {
   let friends = superHeroes[i].friends;
   let superpowers = superHeroes[i].superpowers;
   let pathImg = superHeroes[i].pathImg;
-  document.querySelector(
-    ".flex-container"
-  ).innerHTML = `<img class="item picture" src="${pathImg}" alt=""/>`;
-  document.querySelector(
-    ".flex-container"
-  ).innerHTML += `<span>${superhero}</span>`;
-  document.querySelector(
-    ".flex-container"
-  ).innerHTML += `<span class="info-main">Вселенная: ${universe}</span>`;
-  document.querySelector(
-    ".flex-container"
-  ).innerHTML += `<span class="info-main">Альтер эго: ${alterEgo}</span>`;
-  document.querySelector(
-    ".flex-container"
-  ).innerHTML += `<span class="info-main">Род деятельности: ${occupation}</span>`;
-  document.querySelector(
-    ".flex-container"
-  ).innerHTML += `<span class="info-main">Друзья: ${friends}</span>`;
-  document.querySelector(
-    ".flex-container"
-  ).innerHTML += `<span class="info-main">Суперсилы: ${superpowers}</span>`;
-  document.querySelector(
-    ".flex-container"
-  ).innerHTML += `<button class="info-additional" id="more">Подробнее:</button>`;
+  let container = document.querySelector(".flex-container");
+  container.innerHTML = `<img class="item picture" src="${pathImg}" alt=""/>`;
+  container.innerHTML += `<span>${superhero}</span>`;
+  container.innerHTML += `<span class="info-main">Вселенная: ${universe}</span>`;
+  container.innerHTML += `<span class="info-main">Альтер эго: ${alterEgo}</span>`;
+  container.innerHTML += `<span class="info-main">Род деятельности: ${occupation}</span>`;
+  container.innerHTML += `<span class="info-main">Друзья: ${friends}</span>`;
+  container.innerHTML += `<span class="info-main">Суперсилы: ${superpowers}</span>`;
+  container.innerHTML += `<button class="info-additional" id="more">Подробнее:</button>`;
 }
 
 btnNext.addEventListener("click", (e) => {
