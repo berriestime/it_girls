@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(237, 203, 253);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Gifs</h1>
+    <form action="">
+        <label for="nameToSearch">Ключевое слово:</label>
+        <input id="nameToSearch" type="text"></input>
+    </form>
+    <button id="btn">Найти картинки</button>
+    <div class="flex-container">
+    </div>
+  </body>
+  <script>
+    const btn = document.querySelector("#btn");
+    let pictures;
+    btn.addEventListener("click", () =>
+        {
+            search();
+        }
+    );
+
+    function search(){
+        const name = document.querySelector('#nameToSearch').value;
+        const url = `https://api.giphy.com/v1/gifs/search?api_key=pUYdOzGYqqz65doxFVvTBOSm9wcwhT6i&q=${name}&limit=5&offset=0&rating=g&lang=en`; 
+        fetch(url)
+        .then((responce) => responce.json())
+        .then((data) => {
+            let container = document.querySelector(".flex-container");
+            let firstUrl = data.data[0].images.original.url;
+            container.innerHTML += `<img class="item picture" src="${firstUrl}" alt=""/>`;
+        })
+    };
+
+    // function render(){
+    //     let container = document.querySelector(".flex-container");
+        // console.log(pictures);
+        // let firstUrl = pictures.data[0].embed_url;
+        // console.log(firstUrl);
+        // container.innerHTML += `<img class="item picture" src="${firstUrl}" alt=""/>`;
+    //     container.innerHTML += `<img class="item picture" src="${pathImg}" alt=""/>`;
+    //     container.innerHTML += `<img class="item picture" src="${pathImg}" alt=""/>`;
+    //     container.innerHTML += `<img class="item picture" src="${pathImg}" alt=""/>`;
+    //     container.innerHTML += `<img class="item" src="${pathImg}" alt=""/>`;
+    // }
+
+  </script>
+</html>
