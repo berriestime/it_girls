@@ -9,6 +9,10 @@
       body {
         background-color: rgb(237, 203, 253);
       }
+
+      .item {
+        width: 20vh;
+      }
     </style>
   </head>
   <body>
@@ -37,22 +41,12 @@
         .then((responce) => responce.json())
         .then((data) => {
             let container = document.querySelector(".flex-container");
-            let firstUrl = data.data[0].images.original.url;
-            container.innerHTML += `<img class="item picture" src="${firstUrl}" alt=""/>`;
+            container.innerHTML = "";
+            for(let i = 0; i < 5; i++){
+                container.innerHTML += `<img class="item" src="${data.data[i].images.original.url}" alt=""/>`;
+            }
         })
     };
-
-    // function render(){
-    //     let container = document.querySelector(".flex-container");
-        // console.log(pictures);
-        // let firstUrl = pictures.data[0].embed_url;
-        // console.log(firstUrl);
-        // container.innerHTML += `<img class="item picture" src="${firstUrl}" alt=""/>`;
-    //     container.innerHTML += `<img class="item picture" src="${pathImg}" alt=""/>`;
-    //     container.innerHTML += `<img class="item picture" src="${pathImg}" alt=""/>`;
-    //     container.innerHTML += `<img class="item picture" src="${pathImg}" alt=""/>`;
-    //     container.innerHTML += `<img class="item" src="${pathImg}" alt=""/>`;
-    // }
 
   </script>
 </html>
