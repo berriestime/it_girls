@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/2_registry.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Регистрация</h2>
+    <form id="registration" class="wrapper">
+      <p class="title">Регистрация</p>
+
+      <div class="input-wrapper">
+        <label class="placeholder" for="firstName">Имя</label>
+        <input class="reg-input" id="firstName" type="text" /><br />
+        <div class="errorMessage" id="errorMessageFirstName"></div>
+      </div>
+      <div class="input-wrapper">
+        <label class="placeholder" for="secondName">Фамилия</label>
+        <input class="reg-input" id="secondName" type="text" /><br />
+        <div class="errorMessage" id="errorMessageSecondName"></div>
+      </div>
+      <div class="input-wrapper">
+        <label class="placeholder" for="login">Придумайте логин</label>
+        <input class="reg-input" id="login" type="text" /><br />
+        <div class="errorMessage" id="errorLogin"></div>
+      </div>
+      <div class="input-wrapper">
+        <label class="placeholder" for="passwordFirst">Придумайте пароль</label>
+        <input class="reg-input" id="passwordFirst" type="text" /><br />
+        <div class="errorMessage" id="errorPasswordFirst"></div>
+      </div>
+      <div class="input-wrapper">
+        <label class="placeholder" for="passwordSecond">Повторите пароль</label>
+        <input class="reg-input" id="passwordSecond" type="text" /><br />
+        <div class="errorMessage" id="errorPasswordSecond"></div>
+      </div>
+      <div class="input-wrapper">
+        <label class="placeholder" for="phoneNumber"
+          >Номер мобильного телефона</label
+        >
+        <input class="reg-input" id="phoneNumber" type="text" /><br />
+        <div class="errorMessage" id="errorPhoneNumber"></div>
+      </div>
+      <button onclick="checkForm();" class="button" type="button">
+        Зарегистрироваться
+      </button>
+    </form>
+  </body>
+  <script src="./scripts/2_registry.js"></script>
+</html>
