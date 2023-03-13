@@ -1,0 +1,46 @@
+1.  "lodash", "debug", "resolve"
+2.  До обращения к модулю нужно сделать 2 шага:
+    1. Установить модуль;
+    2. Использовать require("модуль") в коде js;
+3.  Проверить установлен ли npm можно командой:
+    npm -v
+4.  Блок finally в конструкции try/catch/finally нужен когда нам нужно что-то выполнить вне зависимости от ошибок в блоке try.
+5.  ```
+    try {
+      alert(`Привет, ${user.name}`);
+    } catch (err) {
+      alert(`Имя пользователя не заполнено`);
+    }
+    ```
+6.  Оператор throw генерирует ошибку
+    throw <объект ошибки>
+    ```
+    let error = new Error("Incorrect data");
+    ```
+    let json = '{"surename": "clukva"}';
+
+    try{
+      let user = JSON.parse(json);
+      if(!user.name){
+        throw new Error("Incorrect data");
+      }
+      alert(user.name);
+    } catch(e){
+      alert("JSON error: " + e.message);
+    }
+    ```
+7.  Для создания файла package.json нужно ввести команду
+    npm init
+8.  ```
+    try {
+      console.log(parseInt("ыыыы"));
+      if (isNaN(parseInt("ыыыы"))) {
+        throw new Error("введена не цифра");
+      }
+    } catch (e) {
+      alert("Ошибка: " + e.message);
+    }
+    ```
+9.  console.log(moment().format("dddd"));
+10. Сборщик - это программа, которая объединяет файлы в бандл. Нужен для сборки проекта и оптимизации работы.
+    Существует множество сборщиков, популярным является webpack. Также существуют сборщики: Gulp, Rollup
