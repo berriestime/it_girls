@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(237, 203, 253);
+      }
+
+      .flex-container {
+        container-type: inline-size;
+      }
+
+      .item {
+        width: 50cqw;
+      }
+
+      @container (min-width: 800px) {
+        .item {
+          width: 20cqw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Gifs</h1>
+    <form action="">
+        <label for="nameToSearch">Ключевое слово:</label>
+        <input id="nameToSearch" type="text"></input>
+    </form>
+    <button id="btn">Найти картинки</button>
+    <div class="flex-container">
+    </div>
+  </body>
+  <script>
+    const btn = document.querySelector("#btn");
+    let pictures;
+    btn.addEventListener("click", () =>
+        {
+            search();
+        }
+    );
+
+    function search(){
+        const name = document.querySelector('#nameToSearch').value;
+        const url = `https://api.giphy.com/v1/gifs/search?api_key=pUYdOzGYqqz65doxFVvTBOSm9wcwhT6i&q=${name}&limit=5&offset=0&rating=g&lang=en`;
+        fetch(url)
+        .then((responce) => responce.json())
+        .then((data) => {
+            let container = document.querySelector(".flex-container");
+            container.innerHTML = "";
+            for(let i = 0; i < 5; i++){
+                container.innerHTML += `<img class="item" src="${data.data[i].images.original.url}" alt=""/>`;
+            }
+        })
+        .catch(err => {
+          alert(`Сервер не доступен!`);
+        });    };
+
+  </script>
+</html>
