@@ -1,0 +1,30 @@
+[
+  {
+    "day": "Sunday",
+    "amount": "0"
+  },
+  {
+    "day": "Moneday",
+    "amount": "6"
+  },
+  {
+    "day": "Tuesday",
+    "amount": "7"
+  },
+  {
+    "day": "Wednesday",
+    "amount": "5"
+  },
+  {
+    "day": "Thursday",
+    "amount": "4"
+  },
+  {
+    "day": "Friday",
+    "amount": "8"
+  },
+  {
+    "day": "Sutarday",
+    "amount": "3"
+  }
+]

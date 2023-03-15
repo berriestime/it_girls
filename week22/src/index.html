@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles/normolize.css" />
+    <link rel="stylesheet" href="../assets/styles/index.css" />
+    <title>Weekly activity</title>
+  </head>
+  <body link="black" vlink="black" alink="black">
+    <canvas id="canvas-basic"></canvas>
+    <header>
+      <img
+        id="logo"
+        src="https://thumb.tildacdn.com/tild3830-6462-4765-b738-653735313730/-/resize/208x/-/format/webp/logo_white.png"
+        alt="logo"
+      />
+      <span id="profile">Профиль</span>
+    </header>
+
+    <div class="container">
+      <aside class="content__left">
+        <ul>
+          <li>
+            <span>
+              <a href="#0">Home</a>
+            </span>
+          </li>
+          <li>
+            <a href="#0">About</a>
+          </li>
+          <li>
+            <a href="#0">Blog</a>
+          </li>
+          <li>
+            <a href="#0">Contact</a>
+          </li>
+        </ul>
+      </aside>
+      <div class="content__mid">
+        <canvas id="acquisitions"></canvas>
+      </div>
+      <div class="content__right">
+        <img id="avatar" src="./../assets/images/avatar.jpg" alt="avatar" />
+        <div id="info" class="info">
+          <span class="large">Сладкий Пирожочек</span>
+          <span class="small">UI/UA designer</span>
+          <span class="small">Высокоскоростной уничтожитель вкусней</span>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="acquisitions.js"></script>
+    <script type="module" src="granim.js"></script>
+    <!-- (Второй способ подключать пакеты) -->
+    <!-- <script src="https://unpkg.com/granim@2.0.0/dist/granim.min.js"></script> -->
+    <!-- (Хотела получить json, надо будет разобраться потом) -->
+    <!-- <script src="api.js"></script> -->
+  </body>
+</html>
