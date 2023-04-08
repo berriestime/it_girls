@@ -1,5 +1,6 @@
 [
     {
+      "id": "1",
       "superhero": "Batman",
       "universe": "DC Comics",
       "alterEgo": "Брюс Уэйн",
@@ -11,6 +12,7 @@
       "pathImg": "./img/batman.jpg"
     },
     {
+      "id": "2",
       "superhero": "Superman",
       "universe": "DC Comics",
       "alterEgo": "Кларк Кент",
@@ -22,6 +24,7 @@
       "pathImg": "./img/superman.jpg"
     },
     {
+      "id": "3",
       "superhero": "Iron Man",
       "universe": "Marvel Comics",
       "alterEgo": "Тони Старк",
@@ -33,6 +36,7 @@
       "pathImg": "./img/ironman.jpg"
     },
     {
+      "id": "4",
       "superhero": "Spiderman",
       "universe": "Marvel Comics",
       "alterEgo": "Питер Паркер",
@@ -44,6 +48,7 @@
       "pathImg": "./img/spiderman.jpg"
     },
     {
+      "id": "5",
       "superhero": "Captain America",
       "universe": "Marvel Comics",
       "alterEgo": "Стивен Роджерс",
@@ -55,6 +60,7 @@
       "pathImg": "./img/capitanamerica.jpg"
     },
     {
+      "id": "6",
       "superhero": "Thor",
       "universe": "Marvel Comics",
       "alterEgo": "нет; полное имя — Тор Одинсон",
@@ -65,6 +71,7 @@
       "pathImg": "./img/thor.jpg"
     },
     {
+      "id": "7",
       "superhero": "Hulk",
       "universe": "Marvel Comics",
       "alterEgo": "Брюс Беннер",
@@ -75,6 +82,7 @@
       "pathImg": "./img/hulk.jpg"
     },
     {
+      "id": "8",
       "superhero": "Wonder Woman",
       "universe": "DC Comics",
       "alterEgo": "Диана Принс",
@@ -85,6 +93,7 @@
       "pathImg": "./img/wonderwoman.jpg"
     },
     {
+      "id": "9",
       "superhero": "Black Widow",
       "universe": "Marvel Comics",
       "alterEgo": "Наташа Романофф",
@@ -96,6 +105,7 @@
       "pathImg": "./img/blackwidow.jpg"
     },
     {
+      "id": "10",
       "superhero": "Deadpool",
       "universe": "Marvel Comics",
       "alterEgo": "Уэйд Уинстон Уилсон",

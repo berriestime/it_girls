@@ -1,4 +1,4 @@
-// import "./index.scss";
+import "./Button.css";
 import React from "react";
 
 function Button(props) {
